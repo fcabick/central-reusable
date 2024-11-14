@@ -74,6 +74,7 @@ jobs:
             echo "Quality Gate passed."
           fi
 
+      # Cria zip do projeto e sobe no arctifact
       - name: Create project archive
         run: |
             zip -r project.zip . -x ".git/*"  # Ignora a pasta .git para reduzir o tamanho do arquivo
