@@ -44,7 +44,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          vendor/bin/phpunit UsuarioTest.php
+          vendor/bin/phpunit TesteUnitario.php
           composer test
 
       - name: Run SonarQube scan
