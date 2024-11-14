@@ -40,12 +40,10 @@ jobs:
 
       - name: Install PHP dependencies
         run: |
-          cd php-pipelines
           composer install
 
       - name: Run unit tests
         run: |
-          cd php-pipelines
           phpunit --testdox
 
       - name: Run SonarQube scan
