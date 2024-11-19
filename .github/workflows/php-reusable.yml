@@ -25,6 +25,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Variaveis de Ambiante
+        run: |
+          env_variables=env
+          echo "$env_variables"
+
       - name: Set up PHP
         run: |
           sudo add-apt-repository ppa:ondrej/php -y
